@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pet Book!</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Add a new Pet!</h1>
+
+    <form action="/pets" method="POST">
+      <label for="pet-name"> Name
+        <input id="pet-name" type="text" name="name" placeholder="enter a name for your new pet!">
+      </label>
+
+      <label for="pet-image-url"> Image Link
+        <input id="pet-image-url" type="text" name="imgURL" placeholder="enter a name for your new pet!">
+      </label>
+
+      <button type="submit">Submit new pet</button>
+
+    </form>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= pet.name %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href="/pets">Back to Pets list</a>
+    <h3><%= pet.name %></h3>
+    <img src="<%= pet.imgURL %>" alt="Picture of <%= pet.name %>">
+    <a href="/pets/<%= pet.id %>/edit">Edit <%= pet.name %></a>
+    <a href="/pets/<%= pet.id %>/delete">Delete <%= pet.name %></a>
+  </body>
+</html>

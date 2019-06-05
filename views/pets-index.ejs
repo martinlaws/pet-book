@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pet Book!</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Pet Book!</h1>
+    <p>Welcome to Pet Book!</p>
+
+    <% db.forEach(pet => { %>
+      <h3><a href="/pets/<%= pet.id %>"><%= pet.name %></a></h3>
+      <a href="/pets/<%= pet.id %>/edit">Edit <%= pet.name %></a>
+      <img src="<%= pet.imgURL %>" alt="Photo of <%= pet.name %>">
+    <% }) %>
+  </body>
+</html>
